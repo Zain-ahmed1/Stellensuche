@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0 !important;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif !important;
+}
+
+:root {
+    --main-color: #39ABB8;
+    --primary-color: #7BEDF4;
+    --secondary-color: #233C5A;
+    --bg-color: #E6F0F2;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --text-color: #0C6069;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    background-color: var(--white-color) !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.hover-text:hover {
+    color: var(--primary-color) !important;
+}
+
+.header__background {
+    background-color: #F4F6F9;
+    color: var(--black-color);
+}
+
+.header__flex iconify-icon {
+    font-size: 20px;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+.header__flex iconify-icon:hover {
+    color: var(--main-color);
+}
+
+.flex__right .right-box {
+    cursor: pointer;
+}
+
+.flex__right .right-box a {
+    color: var(--black-color);
+}
+
+.flex__right .right-box p {
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.flex__right .right-box:hover p,
+.flex__right .right-box:hover iconify-icon {
+    color: var(--main-color);
+}
+
+.navbar-bg {
+    background: var(--secondary-color) !important;
+}
+
+.btn-flex .custom-btn-style {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.btn-flex .custom-btn-style:nth-child(1) {
+    width: 130px;
+    border: 1px solid var(--white-color);
+}
+
+.btn-flex .custom-btn-style:nth-child(2) {
+    width: 130px;
+    border: 1px solid transparent;
+    background-color: var(--primary-color);
+    width: 200px;
+    outline: none;
+    padding: 10px 0;
+    color: var(--black-color);
+    transition: all 250ms ease-in-out;
+}
+
+.btn-flex .custom-btn-style:nth-child(1):hover {
+    border-color: var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color) !important;
+}
+
+.btn-flex .custom-btn-style:nth-child(2):hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+.bg-color {
+    background-color: var(--bg-color);
+}
+
+.hero-txt h1 {
+    font-size: 46px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.search-form {
+    width: 100%;
+    max-width: 800px;
+}
+
+.search-form input {
+    border-radius: 10000px !important;
+    outline: none;
+    border: none;
+    height: 65px;
+    padding-left: 60px;
+    font-size: 16px;
+    border: 1px solid transparent;
+}
+
+.search-form input:focus,
+.search-form input:hover {
+    box-shadow: none;
+    border: 1px solid var(--secondary-color);
+}
+
+.input-group-append {
+    position: absolute;
+    left: 10px;
+    z-index: 10;
+    height: 100%;
+    border-radius: 1000px;
+}
+
+.input-group-append .input-group-text {
+    border: none;
+    height: 100%;
+}
+
+.input-group-append .input-group-text iconify-icon {
+    font-size: 26px;
+}
+
+.btn-submit {
+    width: 260px;
+    padding: 14px 0;
+    background-color: var(--main-color) !important;
+}
