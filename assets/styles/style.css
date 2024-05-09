@@ -119,7 +119,7 @@ a {
 }
 
 .hero-txt h1 {
-    font-size: 46px;
+    font-size: 54px;
     color: var(--text-color);
     font-weight: 700;
 }
@@ -163,7 +163,38 @@ a {
 }
 
 .btn-submit {
-    width: 260px;
-    padding: 14px 0;
+    width: 280px;
+    height: 60px;
     background-color: var(--main-color) !important;
+}
+
+.cards-container .card-head h1 {
+    font-size: 32px;
+    padding-bottom: 18px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.cards-container .card {
+    border-radius: 20px;
+    border: 1px solid #C8CCD0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    row-gap: 10px;
+}
+
+.cards-container .card p {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+.cards-container .row .last-card-container {
+    margin-left: -16px !important;
+}
+
+.cards-container .card .btn-submit {
+    width: 100%;
+    height: 50px;
 }

@@ -41,8 +41,28 @@
     .btn-flex .custom-btn-style {
         width: 200px !important;
     }
+
+
+    .cards-container .row .last-card-container {
+        margin-left: -0 !important;
+    }
 }
 
+@media only screen and (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+
+    .hero-section .img {
+        width: 260px;
+        margin-bottom: -50px !important;
+        padding-top: 30px;
+    }
+
+    .cards-container .card-head h1 {
+        font-size: 26px;
+    }
+}
 
 @media only screen and (max-width: 640px) {
     .flex__right .right-box iconify-icon {
@@ -58,12 +78,21 @@
         padding: 12px 0 !important;
     }
 
-    .hero-section {
-        padding-top: 0;
+    .hero-txt h1 {
+        font-size: 42px;
+    }
+
+    .hero-txt p {
+        font-size: 20px !important;
     }
 
     .btn-submit {
         width: 100%;
     }
 
+    .hero-section .img {
+        width: 220px;
+        margin-bottom: -50px !important;
+        padding-top: 30px;
+    }
 }

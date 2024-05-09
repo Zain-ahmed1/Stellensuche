@@ -100,7 +100,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon fs-2"></span>
                 </button>
-                <div class="Navbar-mobile collapse z-3" id="navbarSupportedContent">
+                <div class="Navbar-mobile collapse" id="navbarSupportedContent" style="z-index: 11;">
                     <div>
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-2">
                             <li class="nav-item">
@@ -130,10 +130,10 @@
     <main>
         <section class="bg-color hero-section">
             <div
-                class="container mx-auto d-flex justify-content-between align-items-center mx-auto px-xl-0 px-sm-3 px-3">
-                <div class="d-flex w-100 flex-column row-gap-sm-4 py-5 align-items-start justify-content-start hero-txt">
+                class="container mx-auto d-flex flex-md-row flex-column justify-content-between align-items-center mx-auto px-xl-0 px-sm-3 px-3">
+                <div class="d-flex w-100 flex-column row-gap-sm-3 align-items-start justify-content-start hero-txt">
                     <h1 class="lh-base ">Erfolgreiche Stellensuche!</h1>
-                    <p class="fs-2 pt-sm-0 pt-3 pb-sm-0 pb-4">
+                    <p class="fs-1 pt-sm-1 pt-3 pb-sm-2 pb-4">
                         Entdecke denien Traumjob!
                     </p>
 
@@ -145,15 +145,71 @@
                                             icon="basil:search-outline"></iconify-icon>
                                     </div>
                                 </span>
-                                <input class="form-control me-sm-2" type="search" placeholder="Stelle suchen" aria-label="Search"
-                                    required>
+                                <input class="form-control me-sm-2" type="search" placeholder="Stelle suchen"
+                                    aria-label="Search" required>
                             </div>
-                            <button class="btn btn-pill btn-primary fs-3 btn-submit py-3" type="submit">Job suchen</button>
+                            <button class="btn btn-pill btn-primary fs-3 btn-submit py-3" type="submit">Job
+                                suchen</button>
                         </form>
                     </div>
                 </div>
-                <div class="img d-md-block d-none">
+                <div class="img">
                     <img src="./assets/images/asd-removebg-preview 1.png" alt="Man Smiling With Job">
+                </div>
+            </div>
+        </section>
+
+        <section class="cards-container py-5 ">
+            <div class="container-xl  mx-auto px-xl-0 px-3 ">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="row column-gap-0 row-gap-4">
+                        <div class="col-sm-6 col-12">
+                            <div class="row">
+                                <div class="card-head">
+                                    <h1>Für Stellensuchende</h1>
+                                </div>
+                            </div>
+                            <div class="row w-100 row-gap-3">
+                                <div class="col-12 col-md-12 col-xl-6">
+                                    <div class="card">
+                                        <h1>Auf Stellensuche.ch Jobs finden</h1>
+                                        <p>Entdecken Sie hier vielfältige Stellenangebote</p>
+                                        <button class="btn btn-submit fs-3 btn-pill text-white">Job Finden</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-12 col-xl-6">
+                                    <div class="card">
+                                        <h1>Auf Stellensuche.ch Jobs ausschreiben</h1>
+                                        <p>Veröffentlichen Sie hier Stellenanzeigen</p>
+                                        <button class="btn btn-submit fs-3 btn-pill text-white">Ausschreiben</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="last-card-container col-sm-6 col-12">
+                            <div class="row">
+                                <div class="card-head">
+                                    <h1>Für Arbeitgeber</h1>
+                                </div>
+                            </div>
+                            <div class="row w-100 row-gap-3">
+                                <div class="col-12 col-md-12 col-xl-6">
+                                    <div class="card">
+                                        <h1>Auf Stellensuche.ch bewerben</h1>
+                                        <p>Bewerben Sie sich ganz einfach auf Ihre Wunschpositionen</p>
+                                        <button class="btn btn-submit fs-3 btn-pill text-white">Bewerben</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-12 col-xl-6">
+                                    <div class="card">
+                                        <h1>Auf Stellensuche.ch gefunden werden</h1>
+                                        <p>Erhöhen Sie Ihre Sichtbarkeit als Arbeitssuchender</p>
+                                        <button class="btn btn-submit fs-3 btn-pill text-white">Inserieren</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
