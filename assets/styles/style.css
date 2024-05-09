@@ -278,3 +278,70 @@ a {
     font-size: 18px;
     text-align: center;
 }
+
+footer {
+    background-color: #1B203E;
+}
+
+footer .info iconify-icon {
+    font-size: 20px;
+}
+
+.info a {
+    transition: all 125ms ease-in-out;
+}
+
+.info a span {
+    font-size: 18px !important;
+    font-weight: 400;
+}
+
+.info a:hover {
+    color: var(--primary-color) !important;
+}
+
+.link-head h1 {
+    font-size: 28px;
+    color: #4AB7C3;
+}
+
+.link-head h1~ul li a {
+    font-size: 18px !important;
+}
+
+.link-head .email-letter {
+    width: 643px;
+    padding-left: 20px;
+    height: 55px !important;
+    padding-right: 54px;
+}
+
+.link-head .email-letter~button {
+    height: 55px !important;
+    margin-left: -60px !important;
+}
+
+.social .link-head h1 {
+    font-size: 26px;
+    padding-top: 50px;
+}
+
+.social .social-icons {
+    transition: all 125ms ease-in-out;
+    column-gap: 14px;
+}
+
+.social .social-icons iconify-icon {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 125ms ease-in-out;
+}
+
+.social .social-icons iconify-icon:hover {
+    color: var(--main-color) !important;
+}
+
+.social .social-icons iconify-icon:last-child {
+    font-size: 20px;
+}

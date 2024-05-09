@@ -75,6 +75,18 @@
         width: 100%;
         margin: 20px 0 !important;
     }
+
+    .link-head .email-letter {
+        width: 100%;
+        max-width: 500px;
+        padding-left: 20px;
+        padding-right: 54px;
+    }
+
+    .link-head .email-letter~button {
+        height: 55px !important;
+        margin-left: -60px !important;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -107,5 +119,11 @@
         width: 220px;
         margin-bottom: -50px !important;
         padding-top: 30px;
+    }
+
+    .link-head .email-letter~button {
+        width: 130px;
+        height: 55px !important;
+        margin-left: -60px !important;
     }
 }
