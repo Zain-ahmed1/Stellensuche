@@ -58,4 +58,12 @@
         padding: 12px 0 !important;
     }
 
+    .hero-section {
+        padding-top: 0;
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+
 }

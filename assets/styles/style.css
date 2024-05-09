@@ -101,8 +101,21 @@ a {
     color: var(--white-color);
 }
 
+/* Hero Section Styling */
 .bg-color {
     background-color: var(--bg-color);
+}
+
+.hero-section {
+    padding-top: 30px;
+}
+
+.hero-section .img {
+    width: 600px;
+}
+
+.hero-section .img img {
+    width: 100%;
 }
 
 .hero-txt h1 {
