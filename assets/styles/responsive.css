@@ -62,6 +62,19 @@
     .cards-container .card-head h1 {
         font-size: 26px;
     }
+
+    .job-card {
+        padding: 26px 30px;
+    }
+
+    .job-card h1 {
+        font-size: 24px;
+    }
+
+    .job-card-container .button {
+        width: 100%;
+        margin: 20px 0 !important;
+    }
 }
 
 @media only screen and (max-width: 640px) {
