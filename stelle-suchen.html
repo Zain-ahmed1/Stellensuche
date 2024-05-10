@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellensuche</title>
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+    <!-- TABLER Styling CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-payments.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-vendors.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-payments.min.css">
+
+
+</head>
+
+<body>
+
+
+    <header class="header" id="mainHeader">
+        <!-- Populated by Load JQuery -->
+    </header>
+
+    <main>
+        <section class="bg-color hero-section py-5">
+            <div
+                class="container mx-auto d-flex flex-md-row flex-column justify-content-between align-items-center w-100 mx-auto px-xl-0 px-sm-3 px-3 py-5">
+                <div class="d-flex w-100 flex-column row-gap-sm-3 align-items-start justify-content-start hero-txt">
+                    <h1 class="lh-base ">Suche nach Stelle</h1>
+                    <p class="fs-1 pt-sm-0 pt-3 pb-sm-2 pb-4">
+                        Durchsuchen Sie unsere Tausenden von Jobs
+                    </p>
+
+                    <div class="w-100">
+                        <form class="d-flex filterForm flex-xl-row flex-column row-gap-3 column-gap-2 search-form w-100"
+                            role="search">
+                            <div class="w-100 position-relative d-flex bg-white btn-pill">
+                                <div class="input-group">
+                                    <span class="input-group-append">
+                                        <div class="input-group-text bg-transparent"><iconify-icon
+                                                icon="basil:search-outline"></iconify-icon>
+                                        </div>
+                                    </span>
+                                    <input class="form-control me-sm-2" type="search" placeholder="Stelle suchen"
+                                        aria-label="Search" required>
+                                </div>
+                                <div class="filter" onclick="toggleSelectBoxes()">
+                                    <iconify-icon icon="cil:filter"></iconify-icon>
+                                </div>
+                                <div class="w-100 select-container d-flex align-items-center justify-content-center ">
+                                    <div class="h-lg-100 h-auto d-flex align-items-center w-100">
+                                        <div class="first-select select-wrapper">
+                                            <div class="select">
+                                                <div class="select-selected">Ort Order Region</div>
+                                                <div class="select-arrow">
+                                                    <iconify-icon icon="mingcute:down-line"></iconify-icon>
+                                                </div>
+                                                <div class="select-options">
+                                                    <div class="select-option" data-value="Content Writing">Content
+                                                        Writing
+                                                    </div>
+                                                    <div class="select-option" data-value="Development">Development
+                                                    </div>
+                                                    <div class="select-option" data-value="Full Stack Development">Full
+                                                        Stack Development</div>
+                                                    <div class="select-option" data-value="SEO Expert">SEO
+                                                        Expert</div>
+                                                    <div class="select-option" data-value="Marketing Related Jobs">
+                                                        Marketing
+                                                        Related Jobs</div>
+                                                    <div class="select-option" data-value="Graphic Designing">Graphic
+                                                        Designing</div>
+                                                    <div class="select-option" data-value="Video Editor">Video Editor
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="selected-option" id="selected-option">
+                                        </div>
+                                    </div>
+                                    <div class="h-lg-100 h-auto d-flex align-items-center w-100">
+                                        <div class="select-wrapper">
+                                            <div class="select">
+                                                <div class="select-selected">Berufsfeld</div>
+                                                <div class="select-arrow">
+                                                    <iconify-icon icon="mingcute:down-line"></iconify-icon>
+                                                </div>
+                                                <div class="select-options">
+                                                    <div class="select-option" data-value="Content Writing">Content
+                                                        Writing
+                                                    </div>
+                                                    <div class="select-option" data-value="Development">Development
+                                                    </div>
+                                                    <div class="select-option" data-value="Full Stack Development">Full
+                                                        Stack Development</div>
+                                                    <div class="select-option" data-value="SEO Expert">SEO
+                                                        Expert</div>
+                                                    <div class="select-option" data-value="Marketing Related Jobs">
+                                                        Marketing
+                                                        Related Jobs</div>
+                                                    <div class="select-option" data-value="Graphic Designing">Graphic
+                                                        Designing</div>
+                                                    <div class="select-option" data-value="Video Editor">Video Editor
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="selected-option1" id="selected-option1">
+                                        </div>
+                                    </div>
+                                    <div class="h-lg-100 h-auto d-flex align-items-center w-100">
+                                        <div class="select-wrapper">
+                                            <div class="select">
+                                                <div class="select-selected">Pensum</div>
+                                                <div class="select-arrow">
+                                                    <iconify-icon icon="mingcute:down-line"></iconify-icon>
+                                                </div>
+                                                <div class="select-options">
+                                                    <div class="select-option" data-value="Content Writing">Content
+                                                        Writing
+                                                    </div>
+                                                    <div class="select-option" data-value="Development">Development
+                                                    </div>
+                                                    <div class="select-option" data-value="Full Stack Development">Full
+                                                        Stack Development</div>
+                                                    <div class="select-option" data-value="SEO Expert">SEO
+                                                        Expert</div>
+                                                    <div class="select-option" data-value="Marketing Related Jobs">
+                                                        Marketing
+                                                        Related Jobs</div>
+                                                    <div class="select-option" data-value="Graphic Designing">Graphic
+                                                        Designing</div>
+                                                    <div class="select-option" data-value="Video Editor">Video Editor
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="selected-option2" id="selected-option2">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-pill btn-primary fs-3 btn-submit py-3" type="submit">Job
+                                suchen</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="job-card-container stelle-cards container mx-auto px-xl-0 px-3">
+                <h1>203 Ergebnisse gefunden</h1>
+                <div class="job-card-flex d-flex flex-column row-gap-3 pt-3">
+                    <!-- Populated By JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pt-5 footer">
+        <!-- Populated By Jquery Load Method -->
+    </footer>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- TABLER Scripting CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+    <!-- Iconify CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="./assets/script/JobCard.js"></script>
+    <script src="./assets/script/app.js" type="module"></script>
+    <script>
+        $(function () {
+            $(".header").load("/layout/header.html");
+            $(".footer").load("/layout/footer.html");
+        });
+        // Adjust scrollbar position by setting scrollLeft property
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const selectWrappers = document.querySelectorAll('.select-wrapper');
+
+            selectWrappers.forEach(selectWrapper => {
+                const select = selectWrapper.querySelector('.select');
+                const selectSelected = select.querySelector('.select-selected');
+                const selectArrow = select.querySelector('.select-arrow');
+                const selectOptions = select.querySelector('.select-options');
+                const selectOptionElements = Array.from(select.querySelectorAll('.select-option'));
+                const selectedOptionInput = selectWrapper.querySelector('.selected-option');
+
+                // Toggle select options visibility and arrow rotation
+                selectSelected.addEventListener('click', function () {
+                    select.classList.toggle('select-open');
+                    selectOptions.style.display = selectOptions.style.display === 'block' ? 'none' : 'block';
+                });
+
+                // Handle option selection
+                selectOptionElements.forEach(option => {
+                    option.addEventListener('click', function () {
+                        const value = this.getAttribute('data-value');
+                        const text = this.textContent;
+                        selectSelected.textContent = text;
+                        if (selectedOptionInput) {
+                            selectedOptionInput.value = value;
+                        }
+                        selectOptions.style.display = 'none'; // Close the options after selection
+                        select.classList.remove('select-open');
+                        selectSelected.classList.add('selected');
+                    });
+                });
+
+                // Close select options when clicking outside
+                document.addEventListener('click', function (event) {
+                    if (!select.contains(event.target)) {
+                        selectOptions.style.display = 'none';
+                        select.classList.remove('select-open');
+                    }
+                });
+            });
+        });
+
+        function toggleSelectBoxes() {
+            var selectWrappers = document.querySelectorAll(".select-wrapper");
+            selectWrappers.forEach(function (wrapper) {
+                if (wrapper.style.display === "block") {
+                    wrapper.style.display = "none";
+                } else {
+                    wrapper.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

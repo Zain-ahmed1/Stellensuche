@@ -21,6 +21,7 @@ html,
 body {
     overflow-x: hidden;
     background-color: var(--white-color) !important;
+    scrollbar-color: var(--secondary-color) #f0f0f0;
 }
 
 a {
@@ -72,11 +73,13 @@ a {
 .btn-flex .custom-btn-style {
     font-weight: 400;
     font-size: 18px;
+    border: none !important;
+    outline: none;
 }
 
 .btn-flex .custom-btn-style:nth-child(1) {
     width: 130px;
-    border: 1px solid var(--white-color);
+    border: 1px solid var(--white-color) !important;
 }
 
 .btn-flex .custom-btn-style:nth-child(2) {
@@ -91,15 +94,16 @@ a {
 }
 
 .btn-flex .custom-btn-style:nth-child(1):hover {
-    border-color: var(--primary-color);
+    border-color: var(--primary-color) !important;
     background-color: transparent;
     color: var(--primary-color) !important;
 }
 
 .btn-flex .custom-btn-style:nth-child(2):hover {
-    background-color: var(--main-color);
-    color: var(--white-color);
+    background-color: #49c6d3;
 }
+
+/* ******************** HOME PAGE STYLING START *********************** */
 
 /* Hero Section Styling */
 .bg-color {
@@ -111,7 +115,7 @@ a {
 }
 
 .hero-section .img {
-    width: 600px;
+    width: 500px;
 }
 
 .hero-section .img img {
@@ -166,6 +170,14 @@ a {
     width: 280px;
     height: 60px;
     background-color: var(--main-color) !important;
+    border: none !important;
+    outline: none;
+    transition: all 123ms ease-in-out;
+}
+
+
+.btn-submit:hover {
+    background-color: #2997a3 !important;
 }
 
 .cards-container .card-head h1 {
@@ -273,14 +285,190 @@ a {
     width: 320px;
     margin: 30px 0 !important;
     height: 62px;
+    border: 1px solid transparent;
     background-color: var(--main-color);
     color: var(--white-color);
     font-size: 18px;
     text-align: center;
 }
 
-footer {
-    background-color: #1B203E;
+.job-card-container .button:hover,
+.job-card-container .button:active {
+    background: transparent !important;
+    color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+
+/* ******************** HOME PAGE STYLING END *********************** */
+
+
+
+
+/* ********************* STELLE PAGE STYLING START **************** */
+.stelle-cards h1 {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--black-color);
+    padding-bottom: 8px;
+}
+
+.filterForm.search-form {
+    max-width: 100%;
+}
+
+.filterForm .form-control:hover,
+.filterForm .form-control:focus {
+    border: 1px solid transparent;
+}
+
+.filter {
+    display: none;
+}
+
+.filterForm .btn-pill {
+    padding: 0;
+}
+
+.select-wrapper {
+    position: relative;
+    width: 240px;
+    padding-right: 30px;
+}
+
+.select-wrapper::after {
+    content: "";
+    position: absolute;
+    background: #233C5A40;
+    width: 1px;
+    height: 40px;
+    left: -10px;
+    top: 50%;
+    z-index: 5;
+    transform: translateY(-50%);
+}
+
+.select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.select-selected {
+    background-color: var(--white-color);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #747474;
+    transition: all 120ms ease-in-out;
+}
+
+.select-selected.colorToggle {
+    color: var(--main-color);
+}
+
+.select-selected.selected {
+    color: var(--black-color);
+}
+
+.select:hover .select-selected,
+.select:hover .select-arrow iconify-icon {
+    color: var(--main-color);
+}
+
+.select-options {
+    display: none;
+    position: absolute;
+    left: -50px;
+    top: 40px;
+    background-color: var(--white-color);
+    border: 1px solid var(--white-color);
+    border-radius: 11px;
+    width: 260px;
+    height: 235px;
+    overflow-y: scroll;
+    scrollbar-color: var(--main-color) #dddddd;
+    z-index: 6;
+    padding: 10px 16px;
+    box-shadow: 0px 4px 45.6px 3px rgba(0, 0, 0, 0.03);
+    opacity: 0;
+    transition: all 120ms ease-in-out;
+    animation: Opacity 120ms ease-in-out both;
+}
+
+@keyframes Opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.select-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-35%);
+    transition: all 120ms ease-in-out;
+    transform-origin: center;
+}
+
+.select-arrow iconify-icon {
+    font-size: 20px;
+    color: var(--black-color);
+    transition: all 120ms ease-in-out;
+}
+
+.select-open .select-arrow iconify-icon {
+    color: var(--main-color);
+}
+
+.select-open .select-arrow {
+    transform: translateY(-60%) rotate(180deg);
+}
+
+.select-option {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 120ms ease-in-out;
+}
+
+.select-option:hover {
+    background-color: var(--bg-color);
+    border-radius: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #1B203E !important;
+    padding-bottom: 0 !important;
 }
 
 footer .info iconify-icon {

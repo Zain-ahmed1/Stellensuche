@@ -24,110 +24,8 @@
 <body>
 
 
-    <header class="header">
-        <div class="pre-header header__background">
-            <div class="pre__header container py-2 mx-auto px-xl-0 px-sm-3 px-1">
-                <div class="header__flex d-flex align-items-center justify-content-between">
-                    <div class="flex__social d-none d-md-flex align-items-center column-gap-3">
-                        <a href="https://www.facebook.com" target="_blank" class="d-flex align-items-center">
-                            <iconify-icon icon="ri:facebook-fill" class="font-md cursor-pointer"></iconify-icon>
-                        </a>
-                        <a href="https://www.instagram.com" target="_blank" class="d-flex align-items-center">
-                            <iconify-icon icon="ri:instagram-fill" class="cursor-pointer"></iconify-icon>
-                        </a>
-                        <a href="https://www.youtube.com" target="_blank" class="d-flex align-items-center">
-                            <iconify-icon icon="bi:youtube" class="cursor-pointer"></iconify-icon>
-                        </a>
-                    </div>
-                    <div
-                        class="flex__right d-flex align-items-center justify-content-md-end justify-content-center column-gap-3 w-100">
-                        <div
-                            class="right__box-1 right-box d-flex align-items-center justify-content-md-end justify-content-center column-gap-2">
-                            <a href="https://maps.app.goo.gl/XJzj4mRv8qcSxkzi7" target="_blank"
-                                class="d-flex align-items-center justify-content-md-end justify-content-center column-gap-2">
-                                <iconify-icon icon="ph:map-pin-fill"></iconify-icon>
-                                <p class="d-flex">Sternschnuppen GmbH &nbsp;<span class="d-sm-flex d-none">Postfach 125,
-                                        5707 Seengen</span></p>
-                            </a>
-                        </div>
-                        <div
-                            class="right__box-1 right-box d-flex align-items-center justify-content-md-end justify-content-center column-gap-2">
-                            <a href="mailTo:info@stellensuche.ch"
-                                class="d-flex align-items-center justify-content-md-end justify-content-center column-gap-2">
-                                <iconify-icon icon="material-symbols:mail-sharp"></iconify-icon>
-                                <p>info@stellensuche.ch</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <nav class="navbar navbar-expand-lg navbar-bg text-white">
-            <div
-                class="container mx-auto d-flex justify-content-between align-items-center py-2 mx-auto px-xl-0 px-sm-3 px-3">
-                <div class="d-flex justify-content-between align-items-center navBar-width z-2 ">
-                    <div class="d-flex align-items-center column-gap-4">
-                        <a class="navbar-brand" href="/">
-                            <img src="./assets/images/logo-web.png" alt="SearchLogo Application" height="60">
-                        </a>
-                        <div class="d-lg-flex d-none">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link text-white hover-text fs-3" href="#">Stelle suchen</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white hover-text fs-3" href="#">Fachkräfte suchen</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-lg-flex d-none justify-content-center  align-items-center column-gap-2">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link text-white hover-text fs-3" href="#">Für Arbeitgeber</a>
-                            </li>
-                        </ul>
-                        <div class="d-flex column-gap-3 btn-flex">
-                            <a href="#" class="btn custom-btn-style btn-pill btn-outline-primary btn-lg text-white">
-                                Login
-                            </a>
-                            <a href="#" class="btn custom-btn-style btn-pill btn-primary btn-lg ">
-                                Registrierung
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon fs-2"></span>
-                </button>
-                <div class="Navbar-mobile collapse" id="navbarSupportedContent" style="z-index: 11;">
-                    <div>
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-2">
-                            <li class="nav-item">
-                                <a class="nav-link text-white hover-text fs-3" href="#">Stelle suchen</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white hover-text fs-3" href="#">Fachkräfte suchen</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white hover-text fs-3" href="#">Für Arbeitgeber</a>
-                            </li>
-                        </ul>
-                        <div class="d-flex flex-column align-items-start justify-content-start row-gap-3 btn-flex">
-                            <a href="#" class="btn custom-btn-style btn-pill btn-outline-primary btn-lg text-white">
-                                Login
-                            </a>
-                            <a href="#" class="btn custom-btn-style btn-pill btn-primary btn-lg ">
-                                Registrierung
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
+    <header class="header" id="mainHeader">
+        <!-- Populated by Load JQuery -->
     </header>
 
     <main>
@@ -232,115 +130,13 @@
         </section>
     </main>
 
-    <footer class="pt-5">
-        <div class="job-card-container container mx-auto px-xl-0 px-3 pb-5">
-            <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="row">
-                        <a class="navbar-brand" href="/">
-                            <img src="./assets/images/logo-web.png" alt="SearchLogo Application" height="65">
-                        </a>
-                    </div>
-                    <div class="row d-flex flex-column row-gap-3 pt-4">
-                        <div class="info">
-                            <a href="tel:062 777 45 29"
-                                class="d-flex text-white align-items-center justify-content-start column-gap-2">
-                                <iconify-icon icon="fluent:call-28-regular"></iconify-icon>
-                                <span>062 777 45 29</span>
-                            </a>
-                        </div>
-                        <div class="info">
-                            <a href="mailTo:info@stellensuche.ch"
-                                class="d-flex text-white align-items-center justify-content-start column-gap-2">
-                                <iconify-icon icon="material-symbols:mail-outline"></iconify-icon>
-                                <span>info@stellensuche.ch</span>
-                            </a>
-                        </div>
-                        <div class="info">
-                            <a href="https://maps.app.goo.gl/XJzj4mRv8qcSxkzi7" target="_blank"
-                                class="d-flex text-white align-items-center justify-content-start column-gap-2">
-                                <iconify-icon icon="ph:map-pin-fill"></iconify-icon>
-                                <span class="d-flex">Sternschnuppen GmbH<br>Postfach 125, 5707 Seengen</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-start pt-sm-0 pt-4">
-                    <div class="link-head">
-                        <h1>Quick links</h1>
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link text-white hover-text fs-3" href="#">Stelle suchen</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white hover-text fs-3" href="#">Fachkräfte suchen</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white hover-text fs-3" href="#">Für Arbeitgeber</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-start pt-lg-0 pt-4">
-                    <div class="link-head">
-                        <h1>Information</h1>
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link text-white hover-text fs-3" href="#">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white hover-text fs-3" href="#">Terms &amp; Bedingungen</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white hover-text fs-3" href="#">Datenschutzrichtlinie</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white hover-text fs-3" href="#">Über uns</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 pt-lg-0 pt-4">
-                    <div class="link-head">
-                        <h1>Newsletter</h1>
-                        <div class="w-100">
-                            <form class="d-flex flex-row row-gap-3 column-gap-2 search-form"
-                                role="search">
-                                <input class="form-control email-letter" type="search" placeholder="Enter Email"
-                                    aria-label="Search" required>
-                                <button class="btn btn-pill btn-primary fs-3 btn-submit py-3" type="submit">Abonnieren</button>
-                            </form>
-                        </div>
-                        <div class="social">
-                            <div class="link-head">
-                                <h1>Follow US</h1>
-                                <div class="social-icons d-flex align-items-center  justify-content-start">
-                                    <iconify-icon icon="tabler:brand-twitter"></iconify-icon>
-                                    <iconify-icon icon="ph:instagram-logo"></iconify-icon>
-                                    <iconify-icon icon="circum:facebook"></iconify-icon>
-                                    <iconify-icon icon="prime:twitter"></iconify-icon>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="cc w-100" style="background-color: var(--bg-color);">
-            <div class="w-100 container px-xl-0 px-3 d-flex flex-sm-row flex-column row-gap-3 justify-content-between align-items-center mx-auto py-3">
-                <span class="fs-3">© 2024 | Stellensuche Limited | Alle Rechte vorbehalten</span>
-                <div class="d-flex column-gap-2 ">
-                    <span class="fs-3 fw-semibold ">WIR AKZEPTIEREN&nbsp;</span>
-                    <span class="payment payment-sm payment-provider-amazon"></span>
-                    <span class="payment payment-sm payment-provider-mastercard"></span>
-                    <span class="payment payment-sm payment-provider-paypal"></span>
-                    <span class="payment payment-sm payment-provider-applepay"></span>
-                </div>
-            </div>
-        </div>
+    <footer class="pt-5 footer">
+        <!-- Populated By Jquery Load Method -->
     </footer>
 
-
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- TABLER Scripting CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
     <!-- Iconify CDN -->
@@ -348,6 +144,12 @@
     <!-- Custom JavaScript -->
     <script src="./assets/script/JobCard.js"></script>
     <script src="./assets/script/app.js" type="module"></script>
+    <script>
+        $(function () {
+            $(".header").load("/layout/header.html");
+            $(".footer").load("/layout/footer.html");
+        });
+    </script>
 </body>
 
 </html>

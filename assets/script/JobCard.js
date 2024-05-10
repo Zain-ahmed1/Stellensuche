@@ -43,8 +43,19 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="d-md-flex d-none align-items-center justify-content-between column-gap-3">
                             <button class="btn-pill job-btn">jetzt bewerben</button>
-                            <button class="switch-icon position-relative">
-                                <span class="text-secondary position-relative  z-1">
+                            <button class="switch-icons position-relative"
+                                style="background: none;
+                                    outline: none;
+                                    border: none;
+                                    width: 25px;"
+                                >
+                                <span class="text-secondary position-relative  z-1"
+                                    style="
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    "
+                                >
                                     <iconify-icon icon="material-symbols:favorite-outline"></iconify-icon>
                                 </span>
                                 <span class="text-red" style="display: none; ">
@@ -69,32 +80,43 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="d-flex d-md-none align-items-center justify-content-center column-gap-3 pt-4">
                             <button class="btn-pill job-btn w-100">jetzt bewerben</button>
-                            <button class="switch-icon switch-icon-fade" data-bs-toggle="switch-icon">
-                                <span class="switch-icon-a text-secondary">
-                                    <iconify-icon icon="material-symbols:favorite-outline" id="favourite"></iconify-icon>
-                                </span>
-                                <span class="switch-icon-b text-red">
-                                    <iconify-icon icon="material-symbols:favorite" style="color: #d72d3e"></iconify-icon>
-                                </span>
-                            </button>
-                        </div>
+                            <button class="switch-icons position-relative"
+                            style="background: none;
+                                outline: none;
+                                border: none;
+                                width: 25px;"
+                            >
+                            <span class="text-secondary position-relative  z-1"
+                                style="
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                "
+                            >
+                                <iconify-icon icon="material-symbols:favorite-outline"></iconify-icon>
+                            </span>
+                            <span class="text-red" style="display: none; ">
+                                <iconify-icon icon="material-symbols:favorite"></iconify-icon>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             `;
         JobCardBox.innerHTML += jobCardHTML;
     });
 
-    const SwitchHearts = document.querySelectorAll('.switch-icon');
+    const SwitchHearts = document.querySelectorAll('.switch-icons');
     SwitchHearts.forEach(heart => {
         heart.addEventListener("click", function () {
             const HeartOutline = heart.querySelector('span:first-child');
             const HeartFill = heart.querySelector('span:last-child');
 
             if (HeartOutline.style.display === 'none') {
-                HeartOutline.style.display = 'block';
+                HeartOutline.style.display = 'flex';
                 HeartFill.style.display = 'none';
             } else {
                 HeartOutline.style.display = 'none';
-                HeartFill.style.display = 'block';
+                HeartFill.style.display = 'flex';
             }
         });
     });

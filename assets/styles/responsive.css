@@ -22,6 +22,10 @@
         max-width: 100% !important;
     }
 
+    .select-wrapper {
+        width: 200px;
+    }
+
 }
 
 @media only screen and (max-width:992px) {
@@ -86,6 +90,51 @@
     .link-head .email-letter~button {
         height: 55px !important;
         margin-left: -60px !important;
+    }
+
+    .select-wrapper {
+        display: none;
+    }
+
+    .filter {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 49.2%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        background-color: var(--bg-color);
+        width: 40px;
+        height: 40px;
+        border-radius: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+    }
+
+    .filter iconify-icon {
+        font-size: 20px;
+    }
+
+    .select-container {
+        position: absolute;
+        top: 80px;
+        box-shadow: 0px 4px 49.5px 0px rgba(0, 0, 0, 0.065);
+        background-color: #fff;
+        border-radius: 1000px;
+    }
+
+    .first-select::after {
+        display: none;
+    }
+
+    .select-wrapper {
+        padding: 10px 0;
+    }
+
+    .select-options {
+        left: 0;
     }
 }
 
