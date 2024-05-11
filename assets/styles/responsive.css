@@ -46,10 +46,28 @@
         width: 200px !important;
     }
 
-
     .cards-container .row .last-card-container {
         margin-left: -0 !important;
     }
+
+    .jb-container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 20px 30px;
+    }
+
+    .sidebar-detail-list span {
+        width: 25%;
+    }
+
+    .sidebar-detail-list iconify-icon {
+        width: 4%;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -221,5 +239,14 @@
     .select-container.selectOpen {
         opacity: 1;
         top: 70px;
+    }
+
+    .sidebar-detail-list span {
+        width: 100%;
+    }
+
+    .sidebar-detail-list iconify-icon {
+        width: auto;
+        margin-right: 10px;
     }
 }

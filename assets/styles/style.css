@@ -444,34 +444,120 @@ a {
 
 /* JOB DETAIL PAGE STYLING */
 
-.detail .job-card:hover {
-    background-color: transparent;
+.detail-job {
     border: 1px solid #C8CCD0;
+    border-radius: 20px;
+    padding: 0 40px !important;
+    position: relative;
 }
 
-.detail .job-card:hover h1 {
+#job-detail-section {
+    position: relative;
+}
+
+#job-detail-section::after {
+    content: "";
+    position: absolute;
+    background: #00000020;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -10px;
+    z-index: 5;
+}
+
+
+.detail-job .job-card {
+    border: none;
+    padding: 30px 0 20px 0;
+}
+
+.detail-job .job-card:hover {
+    background-color: transparent;
+}
+
+.detail-job .job-card:hover h1 {
     text-decoration: none;
 }
 
+.description h1 {
+    color: #233C5A;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.description-para p {
+    font-size: 18px;
+    line-height: 29px;
+}
 
 
+.description .list-group {
+    margin-left: 12px !important;
+}
 
+.description .list-group li {
+    padding: 6px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
 
+.sidebar {
+    background-color: #fff;
+    border: 1px solid #C8CCD0;
+    border-radius: 20px;
+    padding: 20px 40px;
+    width: 450px;
+    height: 100%;
+}
 
+.sidebar .head h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
 
+.sidebar .descrip-img>div {
+    background-color: #F4F6F9;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
 
+.sidebar .descrip-img>div img {
+    width: 100%;
+    max-width: 120px;
+    margin: auto;
+    text-align: center;
+}
 
+.sidebar .sidebar-detail h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
 
+.sidebar-detail-list span {
+    width: 100%;
+    color: #787878;
+    font-size: 16px;
+}
 
+.sidebar-detail-list span~div {
+    color: var(--black-color) !important;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+}
 
+.sidebar-detail-list iconify-icon {
+    font-size: 22px;
+    width: 11%;
+    color: #233C5A;
+}
 
-
-
-
-
-
-
-
+.web iconify-icon {
+    font-size: 19px;
+}
 
 .footer {
     background-color: #1B203E !important;
