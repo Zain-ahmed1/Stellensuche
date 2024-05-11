@@ -470,6 +470,7 @@ a {
 .detail-job .job-card {
     border: none;
     padding: 30px 0 20px 0;
+    cursor: auto;
 }
 
 .detail-job .job-card:hover {
@@ -558,6 +559,168 @@ a {
 .web iconify-icon {
     font-size: 19px;
 }
+
+
+/* VIDEO PLAYER STYLING */
+.c-video {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.video {
+    border-radius: 12px;
+    width: 100%;
+}
+
+.controls {
+    z-index: 5;
+    width: 100%;
+}
+
+.controls .bottom-controls {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 25px;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 700px;
+    background-color: #051327e2;
+    -webkit-backdrop-filter: blur(22px);
+    backdrop-filter: blur(22px);
+    border-radius: 8px;
+    padding: 10px 20px;
+    column-gap: 16px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 120ms ease-in-out;
+}
+
+.c-video:hover .controls .bottom-controls {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.bottom-controls #playPauseBtn {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 22px;
+}
+
+.controls .center-btn {
+    z-index: 10;
+    background-color: #14D1E5;
+    width: 70px;
+    height: 70px;
+    border-radius: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.controls .center-btn iconify-icon {
+    font-size: 30px;
+}
+
+#playPauseBtn div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playPauseBtn #pause {
+    display: none;
+}
+
+#playPauseBtn iconify-icon {
+    font-size: 24px;
+    width: 20px;
+}
+
+.controls .progress {
+    height: 5px;
+    background-color: #878787;
+    transition: height 100ms ease-in-out;
+}
+
+.controls .progress:hover {
+    height: 8px;
+}
+
+.controls progress {
+    display: block;
+    width: 0;
+    height: 100%;
+    margin-top: 0.125rem;
+    background-color: #fff;
+    border: none;
+    color: #0095dd;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    transition: width 300ms linear;
+}
+
+.right-controls iconify-icon {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Customize the appearance of the sound bar container */
+.sound {
+    position: relative;
+}
+
+.sound-bar {
+    width: 80px;
+    position: absolute;
+    transform: rotate(270deg);
+    top: -60px;
+    left: -30px;
+}
+
+/* Customize the appearance of the range input */
+.sound-bar input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    border-radius: 4px;
+    background-color: #878787;
+    outline: none;
+    cursor: pointer;
+    display: none;
+    animation: Opacity 120ms ease-in-out both;
+}
+
+/* Customize the appearance of the range thumb */
+.sound-bar input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 1000px;
+    border: none !important;
+    background-color: #fff;
+    cursor: pointer;
+}
+
 
 .footer {
     background-color: #1B203E !important;

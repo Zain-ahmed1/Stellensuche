@@ -34,7 +34,8 @@
 
     <main>
         <section class="mt-4 mb-5 pb-4">
-            <div class="container-xl jb-container mx-auto d-flex justify-content-between align-content-center column-gap-4">
+            <div
+                class="container-xl jb-container mx-auto d-flex justify-content-between align-content-center column-gap-4">
                 <div class="job-card-container detail-job container-xl mx-auto" style="background-color: #fff;">
                     <div id="job-detail-section"></div>
                     <div class="py-3">
@@ -115,7 +116,48 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- Video Section -->
+                    <div class="video-container pt-3 pb-4">
+                        <div class="c-video">
+                            <video src="./assets/video/Best of Dolby Vision 12K HDR 120fps.mp4" class="video" loop></video>
+                            <div class="controls">
+                                <div class="center-btn">
+                                    <iconify-icon icon="solar:play-broken"></iconify-icon>
+                                </div>
+                                <div class="bottom-controls">
+                                    <button id="playPauseBtn">
+                                        <div id="pause">
+                                            <iconify-icon icon="material-symbols:pause"></iconify-icon>
+                                        </div>
+                                        <div id="play">
+                                            <iconify-icon icon="teenyicons:play-solid"></iconify-icon>
+                                        </div>
+                                    </button>
+                                    <div class="progress">
+                                        <progress id="progress" value="0" min="0">
+                                            <span id="progress-bar"></span>
+                                        </progress>
+                                    </div>
+                                    <div
+                                        class="right-controls d-flex justify-content-between align-items-center column-gap-3">
+                                        <div class="sound d-flex justify-content-between align-items-center">
+                                            <iconify-icon icon="lets-icons:sound-max"></iconify-icon>
+                                            <div class="sound-bar">
+                                                <input type="range" id="volumeRange" min="0" max="1" step="0.1"
+                                                    value="1">
+                                            </div>
+                                        </div>
+                                        <div class="settings d-flex justify-content-between align-items-center">
+                                            <iconify-icon icon="solar:settings-broken"></iconify-icon>
+                                        </div>
+                                        <div class="fullscreen d-flex justify-content-between align-items-center">
+                                            <iconify-icon icon="material-symbols:fullscreen-rounded"></iconify-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="sidebar">
                     <div>
@@ -218,6 +260,77 @@
             $(".header").load("/layout/header.html");
             $(".footer").load("/layout/footer.html");
         });
+
+        const video = document.querySelector('.video');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const CenterBtn = document.querySelector('.center-btn');
+        const fullscreenBtn = document.querySelector('.fullscreen');
+        const progressContainer = document.querySelector('.progress');
+        const progress = document.getElementById('progress');
+        const volumeRange = document.getElementById('volumeRange');
+        const Sound = document.querySelector('.sound iconify-icon');
+
+        playPauseBtn.addEventListener('click', togglePlayPause);
+        CenterBtn.addEventListener('click', togglePlayPause);
+        video.addEventListener('timeupdate', updateProgress);
+        fullscreenBtn.addEventListener('click', toggleFullscreen);
+
+        progressContainer.addEventListener('click', (e) => {
+            const scrubTime = (e.offsetX / progressContainer.offsetWidth) * video.duration;
+            video.currentTime = scrubTime;
+        });
+
+        function togglePlayPause() {
+            if (video.paused) {
+                video.play();
+                document.getElementById("pause").style.display = "flex"
+                document.getElementById("play").style.display = "none"
+                CenterBtn.style.display = "none";
+            } else {
+                video.pause();
+                document.getElementById("pause").style.display = "none"
+                document.getElementById("play").style.display = "flex"
+            }
+        }
+
+        Sound.addEventListener('click', () => {
+            if (volumeRange.style.display == "block") {
+                volumeRange.style.display = "none";
+            } else {
+                volumeRange.style.display = "block";
+            }
+        })
+
+        volumeRange.addEventListener('input', () => {
+            video.volume = volumeRange.value;
+        });
+
+        video.addEventListener('volumechange', () => {
+            volumeRange.value = video.volume;
+        });
+
+        function updateProgress() {
+            const progressPercent = (video.currentTime / video.duration) * 100;
+            progress.style.width = `${progressPercent}%`;
+
+            if (video.ended) {
+                document.getElementById("pause").style.display = "none";
+                document.getElementById("play").style.display = "flex";
+            }
+        }
+
+        function toggleFullscreen() {
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.mozRequestFullScreen) {
+                video.mozRequestFullScreen();
+            } else if (video.webkitRequestFullscreen) {
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) {
+                video.msRequestFullscreen();
+            }
+        }
+
     </script>
 </body>
 
