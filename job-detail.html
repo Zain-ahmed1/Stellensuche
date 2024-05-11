@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellensuche</title>
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+    <!-- TABLER Styling CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-payments.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-vendors.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-payments.min.css">
+
+    <style>
+        body {
+            background-color: #FDFDFD !important;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header class="header" id="mainHeader">
+        <!-- Populated by Load JQuery -->
+    </header>
+
+    <main>
+        <section class="my-5">
+            <div class="job-card-container detail container mx-auto px-xl-0 px-3" style="background-color: #fff;">
+                <div id="job-detail-section"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pt-5 footer">
+        <!-- Populated By Jquery Load Method -->
+    </footer>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- TABLER Scripting CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+    <!-- Iconify CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="./assets/script/JobCard.js"></script>
+    <script src="./assets/script/JobDetail.js"></script>
+    <script src="./assets/script/app.js" type="module"></script>
+    <script>
+        $(function () {
+            $(".header").load("/layout/header.html");
+            $(".footer").load("/layout/footer.html");
+        });
+    </script>
+</body>
+
+</html>

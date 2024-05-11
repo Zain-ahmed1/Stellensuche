@@ -442,9 +442,16 @@ a {
 
 
 
+/* JOB DETAIL PAGE STYLING */
 
+.detail .job-card:hover {
+    background-color: transparent;
+    border: 1px solid #C8CCD0;
+}
 
-
+.detail .job-card:hover h1 {
+    text-decoration: none;
+}
 
 
 

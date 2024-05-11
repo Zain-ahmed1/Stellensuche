@@ -33,10 +33,13 @@ const JobCardData = [
 
 document.addEventListener('DOMContentLoaded', () => {
     const JobCardBox = document.querySelector(".job-card-flex");
-
+  
     JobCardData.forEach(jobData => {
+
+
         const jobCardHTML = `
                 <div class="job-card">
+                <a href="job-detail.html?title=${encodeURIComponent(jobData.title)}">
                     <div class="d-flex justify-content-between align-items-start">
                         <div class="pe-3">
                             <h1>${jobData.title}</h1>
@@ -100,6 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             </span>
                         </button>
                     </div>
+                    </a>
                 </div>
             `;
         JobCardBox.innerHTML += jobCardHTML;

@@ -54,7 +54,8 @@
                                 <div class="filter" onclick="toggleSelectBoxes()">
                                     <iconify-icon icon="cil:filter"></iconify-icon>
                                 </div>
-                                <div class="w-100 select-container d-flex align-items-center justify-content-center ">
+                                <div
+                                    class="w-100 select-container d-sm-flex align-items-center justify-content-center ">
                                     <div class="h-lg-100 h-auto d-flex align-items-center w-100">
                                         <div class="first-select select-wrapper">
                                             <div class="select">
@@ -226,15 +227,21 @@
         });
 
         function toggleSelectBoxes() {
-            var selectWrappers = document.querySelectorAll(".select-wrapper");
-            selectWrappers.forEach(function (wrapper) {
-                if (wrapper.style.display === "block") {
-                    wrapper.style.display = "none";
-                } else {
-                    wrapper.style.display = "block";
+            const selectContainer = document.querySelector(".select-container");
+            selectContainer.classList.toggle('selectOpen'); // Toggle the 'selectOpen' class
+
+            // Close select options when clicking outside
+            document.addEventListener('click', function (event) {
+                // Check if select container is visible and the click is outside of it
+                if (selectContainer.classList.contains('selectOpen') && !selectContainer.contains(event.target)) {
+                    selectContainer.classList.remove('selectOpen'); // Remove the class to hide the select container
                 }
             });
+
+            // Prevent event propagation to avoid immediate hiding of the select container
+            event.stopPropagation();
         }
+
     </script>
 </body>
 
