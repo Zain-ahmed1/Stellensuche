@@ -1069,7 +1069,7 @@ a {
 .tabs .tab-active {
     display: inline-block;
     position: absolute;
-    width: 200px;
+    width: 50%;
     height: 100%;
     left: 0;
     top: 0;
