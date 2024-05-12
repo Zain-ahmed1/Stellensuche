@@ -55,10 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Retrieve job name from URL query parameter
     const urlParams = new URLSearchParams(window.location.search);
-    const name = urlParams.get('name');
-
-    // Find the job data with the matching name
-    const selectedJob = profileCardData.find(profile => profile.name === name);
+    const encodedName = urlParams.get('name');
+    const name = decodeURIComponent(encodedName).replace(/-/g, ' ');
+    // Find the job data with the matching name (case-insensitive)
+    const selectedJob = profileCardData.find(profile => profile.name.toLowerCase() === name.toLowerCase());
 
     // If a job with the matching name is found, generate its detail HTML
     if (selectedJob) {
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         JobDetailSection.innerHTML = profileCardHtml;
     } else {
         // Handle case where no matching job is found
-        JobDetailSection.innerHTML = "<p>Job not found</p>";
+        JobDetailSection.innerHTML = "<p class='fs-1 px-4 px-lg-0 py-3 w-100 text-center fw-bold'>Profile not found</p>";
     }
 
     const SwitchHearts = document.querySelectorAll('.switch-icons');

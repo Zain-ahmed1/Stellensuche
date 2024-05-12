@@ -307,6 +307,8 @@
             const bottomControls = document.querySelector(".bottom-controls");
             bottomControls.classList.toggle('visible');
             event.stopPropagation();
+            togglePlayPause();
+            volumeRange.classList.remove('visible');
         }
 
 

@@ -61,9 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const skillsHTML = skillsSetArray.map(skill => `<span class="skill btn-pill">${skill}</span>`).join(''); // Generate HTML for skills
 
+        const encodedName = encodeURIComponent(profileData.name.replace(/\s+/g, '-'));
+
         const profileCardHtml = `
                 <div class="profile-card">
-                    <a href="profile-detail.html?name=${encodeURIComponent(profileData.name)}">
+                    <a href="profile-detail.html?name=${encodedName}">
                         <div class="d-lg-flex justify-content-between align-items-start column-gap-4">
                             <div>
                                 <img src=${profileData.img} alt="Maria" class="profile-pic">

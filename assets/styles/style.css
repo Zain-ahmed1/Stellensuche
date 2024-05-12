@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('responsive.css');
 
 * {
     padding: 0;
@@ -28,6 +29,7 @@ a {
     text-decoration: none !important;
     color: inherit;
 }
+
 
 .hover-text:hover {
     color: var(--primary-color) !important;
@@ -794,6 +796,7 @@ a {
     font-size: 16px;
     color: #0B8593;
     transition: all 129ms ease-in-out;
+    cursor: pointer;
 }
 
 .profile-card:hover .skill,
@@ -818,6 +821,10 @@ a {
     font-size: 16px;
     font-weight: 600;
     transition: all 129ms ease-in-out;
+}
+
+.profile-pic {
+    border-radius: 20px;
 }
 
 .profile-hero .profile-pic {
@@ -847,7 +854,7 @@ a {
 }
 
 .profile-hero .job-btn:hover {
-    background-color: #0B8593;
+    background-color: #49c6d3;
 }
 
 .profile-hero .job-btn~button iconify-icon {
@@ -859,19 +866,150 @@ a {
 }
 
 
+/* PORFILE SIDEBAR STYLING */
+
+.profile-sidebar {
+    padding: 20px 0;
+    width: 500px;
+}
+
+.profile-sidebar h1 {
+    font-size: 20px;
+    color: #110B09;
+    font-weight: 700;
+}
+
+.video-head .c-video {
+    max-width: 100%;
+}
+
+.video-head .c-video .controls .bottom-controls {
+    bottom: 5px;
+}
+
+.video-head .c-video .controls .center-btn {
+    width: 50px;
+    height: 50px;
+}
+
+.video-head .c-video .controls .center-btn iconify-icon {
+    font-size: 20px;
+}
+
+.profile-sidebar .sidebar-detail-list {
+    cursor: pointer;
+}
+
+.profile-sidebar .sidebar-detail-list span {
+    color: var(--black-color);
+    font-weight: 400;
+}
 
 
+/* PROFILE MAIN CONTENT */
+.profile-main-content {
+    width: 100%;
+}
 
+.profile-main-content .nav-tabs {
+    width: 100%;
+    border-color: #D7D7D7 !important;
+}
 
+.profile-main-content .nav-tabs .nav-link {
+    background-color: transparent;
+    border: none;
+    border-bottom: none;
+    color: #6C6C6C;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 20px;
+}
 
+.profile-main-content .nav-tabs .nav-link.active {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #233C5A;
+    color: #0C6069;
+}
 
+.tab-content h1 {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 12px;
+}
 
+.tab-content p {
+    font-size: 18px;
+    line-height: 28px;
+}
 
+.tab-content ul li {
+    font-size: 18px;
+    padding: 4px 0;
+}
 
+.tab-content .portfolio h1 {
+    font-size: 20px;
+    color: var(--black-color);
+}
 
+.portfolio .pt-img {
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+}
 
+.pt-img .pt-div {
+    width: 100%;
+}
 
+.pt-div .inner-div {
+    border-radius: 12px;
+    border: 1px solid #efefef;
+}
 
+.pt-div img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pt-div img:hover {
+    transform: scale(1.15);
+}
+
+.modal-dialog {
+    pointer-events: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+    border-radius: 20px;
+}
+
+.modal-header {
+    border: none !important;
+}
+
+.modal-footer {
+    justify-content: center !important;
+}
+
+.modal-footer button {
+    width: 160px;
+    padding: 12px 0;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    font-size: 16px;
+    border-radius: 8px;
+    outline: none !important;
+}
+
+.modal-footer button:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    border: 1px solid var(--main-color) !important;
+}
 
 .footer {
     background-color: #1B203E !important;

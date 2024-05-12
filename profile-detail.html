@@ -28,12 +28,254 @@
     </header>
 
     <main>
-        <section class="pb-4">
+        <section>
             <div style="background-color: #E6F0F2;" class="py-4">
                 <div
                     class="container-xl pf-container mx-auto d-flex justify-content-between align-content-center column-gap-4">
 
                     <div id="profile-detail-section"></div>
+
+                </div>
+            </div>
+            <div
+                class="profile-detail-container py-md-3 container-xl mx-auto d-flex flex-md-row flex-column-reverse justify-content-between align-content-center px-xl-0 px-3 column-gap-xl-5 column-gap-4">
+                <div class="profile-sidebar">
+                    <div class="video-head">
+                        <h1>Meet Maria L.</h1>
+                        <div class="video-container pt-3 pb-4">
+                            <div class="c-video">
+                                <video src="./assets/video/placeholder.mp4" class="video" loop></video>
+                                <div class="controls">
+                                    <div class="center-btn">
+                                        <iconify-icon icon="solar:play-broken"></iconify-icon>
+                                    </div>
+                                    <div class="bottom-controls">
+                                        <button id="playPauseBtn">
+                                            <div id="pause">
+                                                <iconify-icon icon="material-symbols:pause"></iconify-icon>
+                                            </div>
+                                            <div id="play">
+                                                <iconify-icon icon="teenyicons:play-solid"></iconify-icon>
+                                            </div>
+                                        </button>
+                                        <div class="progress">
+                                            <progress id="progress" value="0" min="0">
+                                                <span id="progress-bar"></span>
+                                            </progress>
+                                        </div>
+                                        <div
+                                            class="right-controls d-flex justify-content-between align-items-center column-gap-3">
+                                            <div class="sound d-flex justify-content-between align-items-center">
+                                                <iconify-icon icon="lets-icons:sound-max"></iconify-icon>
+                                                <div class="sound-bar">
+                                                    <input type="range" id="volumeRange" min="0" max="1" step="0.1"
+                                                        value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings d-flex justify-content-between align-items-center">
+                                                <iconify-icon icon="solar:settings-broken"></iconify-icon>
+                                            </div>
+                                            <div class="fullscreen d-flex justify-content-between align-items-center">
+                                                <iconify-icon icon="material-symbols:fullscreen-rounded"></iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h1>Kontakt zum Arbeitnehmer</h1>
+                        <div class="sidebar-detail py-3">
+                            <div
+                                class="d-flex sidebar-detail-list web justify-content-start w-100 align-items-start pt-2 column-gap-2 ">
+                                <iconify-icon icon="material-symbols:mail-outline"></iconify-icon>
+                                <span>info@stellensuche.ch</span>
+                            </div>
+                            <div
+                                class="d-flex sidebar-detail-list justify-content-start w-100 align-items-start pt-3 column-gap-2 ">
+                                <iconify-icon icon="fluent:call-28-regular"></iconify-icon>
+                                <span>062 777 45 29</span>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <h1>Skills</h1>
+                            <div
+                                class="skills d-flex pt-2 justify-content-start flex-wrap align-items-center column-gap-2 row-gap-3">
+                                <span class="btn-pill skill">Fall Management</span>
+                                <span class="btn-pill skill">Jira</span>
+                                <span class="btn-pill skill">Agile Methodik</span>
+                                <span class="btn-pill skill">Microsoft</span>
+                                <span class="btn-pill skill">Jira / Confluence</span>
+                                <span class="btn-pill skill">Unternehmensmarkenidentität</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-main-content py-md-3 pt-3">
+                    <div class="tab-card">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs" data-bs-toggle="tabs">
+                                <li class="nav-item">
+                                    <a href="#allgemeine-details" class="nav-link active"
+                                        data-bs-toggle="tab">Allgemeine Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#spezifische-detail" class="nav-link" data-bs-toggle="tab">Spezifische
+                                        Details</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body py-4">
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="allgemeine-details">
+                                    <div>
+                                        <h1>Einleitung:</h1>
+                                        <p>
+                                            In der Welt des Projektmanagements ist Erfahrung ein unschätzbares Gut. Seit
+                                            über einem Jahrzehnt navigiere ich durch die komplexen Landschaften der
+                                            Projektplanung, -durchführung und -lieferung, verfeinere meine Fähigkeiten
+                                            und entwickle meinen Ansatz, um Erfolg zu erzielen. Lassen Sie uns in die
+                                            Reise eintauchen, die mich zu einem erfahrenen Projektmanager geformt hat
+                                        </p>
+                                    </div>
+                                    <div class="py-sm-4 py-3">
+                                        <h1>Erfahrenes Führen:</h1>
+                                        <p>
+                                            Im Kern meiner Rolle liegt die Fähigkeit zu führen. Im Laufe der Jahre hatte
+                                            ich das Privileg, diverse Teams auf gemeinsame Ziele hin zu führen,
+                                            Zusammenarbeit und Synergie zu fördern. Ob es darum geht, komplexe Projekte
+                                            zu orchestrieren oder Arbeitsabläufe zu optimieren, mein Führungsstil
+                                            gewährleistet, dass jedes Mitglied befähigt wird, sein Bestes beizutragen.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h1>Meine Schlüsselkompetenzen:</h1>
+                                        <ul>
+                                            <li>🌟 Erfahrener Projektmanager: Über 10 Jahre Erfahrung in der Leitung von
+                                                Projekten</li>
+                                            <li>💼 Effektive Teamführung: Fähigkeit, diverse Teams zu führen und zu
+                                                motivieren</li>
+                                            <li>📊 Strategische Planung: Entwicklung umfassender Projektstrategien und
+                                                Zeitpläne </li>
+                                            <li>📞 Klare Kommunikation: Offene und transparente Kommunikation mit
+                                                Stakeholdern und Teammitgliedern</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="portfolio py-4">
+                                        <h1>Portfolio</h1>
+                                        <div
+                                            class="d-flex pt-img flex-column row-gap-sm-4 row-gap-3 justify-content-start align-items-center">
+                                            <div
+                                                class="d-sm-flex pt-div overflow-hidden justify-content-start align-items-start column-gap-sm-4 column-gap-3">
+                                                <div class="overflow-hidden inner-div w-100" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    <img src="./assets/images/portfolio-img/pt-1.png" alt="">
+                                                </div>
+                                                <div class="overflow-hidden inner-div w-100 pt-sm-0 mt-3 mt-sm-0" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal1">
+                                                    <img src="./assets/images/portfolio-img/pt-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="d-sm-flex pt-div pt-img overflow-hidden justify-content-start align-items-start column-gap-4">
+                                                <div class="overflow-hidden inner-div w-100" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal2">
+                                                    <img src="./assets/images/portfolio-img/pt-4.png" alt="">
+                                                </div>
+                                                <div class="overflow-hidden inner-div w-100 pt-sm-0 mt-3 mt-sm-0" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal3">
+                                                    <img src="./assets/images/portfolio-img/pt-3.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal" id="exampleModal" tabindex="-1">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img src="./assets/images/portfolio-img/pt-1.png" alt="">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal" id="exampleModal1" tabindex="-1">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img src="./assets/images/portfolio-img/pt-2.png" alt="">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal" id="exampleModal2" tabindex="-1">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img src="./assets/images/portfolio-img/pt-4.png" alt="">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal" id="exampleModal3" tabindex="-1">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img src="./assets/images/portfolio-img/pt-4.png" alt="">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="spezifische-detail">
+                                    <div>
+                                        <h1>Einleitung:</h1>
+                                        <p>
+                                            In der Welt des Projektmanagements ist Erfahrung ein unschätzbares Gut. Seit
+                                            über einem Jahrzehnt navigiere ich durch die komplexen Landschaften der
+                                            Projektplanung, -durchführung und -lieferung, verfeinere meine Fähigkeiten
+                                            und entwickle meinen Ansatz, um Erfolg zu erzielen. Lassen Sie uns in die
+                                            Reise eintauchen, die mich zu einem erfahrenen Projektmanager geformt hat
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -59,6 +301,96 @@
             $(".header").load("/layout/header.html");
             $(".footer").load("/layout/footer.html");
         });
+
+
+        const video = document.querySelector('.video');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const CenterBtn = document.querySelector('.center-btn');
+        const fullscreenBtn = document.querySelector('.fullscreen');
+        const progressContainer = document.querySelector('.progress');
+        const progress = document.getElementById('progress');
+        const volumeRange = document.getElementById('volumeRange');
+        const Sound = document.querySelector('.sound iconify-icon');
+
+        playPauseBtn.addEventListener('click', togglePlayPause);
+        CenterBtn.addEventListener('click', togglePlayPause);
+        video.addEventListener('timeupdate', updateProgress);
+        video.addEventListener('click', toggleControls);
+        fullscreenBtn.addEventListener('click', toggleFullscreen);
+
+        progressContainer.addEventListener('click', (e) => {
+            const scrubTime = (e.offsetX / progressContainer.offsetWidth) * video.duration;
+            video.currentTime = scrubTime;
+        });
+
+        Sound.addEventListener('click', toggleSound);
+
+        volumeRange.addEventListener('input', () => {
+            video.volume = volumeRange.value;
+        });
+
+        video.addEventListener('volumechange', () => {
+            volumeRange.value = video.volume;
+        });
+
+        document.body.addEventListener('click', (event) => {
+            const bottomControls = document.querySelector(".bottom-controls");
+            const target = event.target;
+
+            // Check if the clicked element is not within the bottom controls
+            if (!bottomControls.contains(target)) {
+                bottomControls.classList.remove('visible');
+                volumeRange.classList.remove('visible');
+            }
+        });
+
+        function toggleControls() {
+            const bottomControls = document.querySelector(".bottom-controls");
+            bottomControls.classList.toggle('visible');
+            event.stopPropagation();
+            togglePlayPause();
+            volumeRange.classList.remove('visible');
+        }
+
+
+        function togglePlayPause() {
+            if (video.paused) {
+                video.play();
+                document.getElementById("pause").style.display = "flex";
+                document.getElementById("play").style.display = "none";
+                CenterBtn.style.display = "none";
+            } else {
+                video.pause();
+                document.getElementById("pause").style.display = "none";
+                document.getElementById("play").style.display = "flex";
+            }
+        }
+
+        function toggleSound() {
+            volumeRange.classList.toggle('visible');
+        }
+
+        function updateProgress() {
+            const progressPercent = (video.currentTime / video.duration) * 100;
+            progress.style.width = `${progressPercent}%`;
+
+            if (video.ended) {
+                document.getElementById("pause").style.display = "none";
+                document.getElementById("play").style.display = "flex";
+            }
+        }
+
+        function toggleFullscreen() {
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.mozRequestFullScreen) {
+                video.mozRequestFullScreen();
+            } else if (video.webkitRequestFullscreen) {
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) {
+                video.msRequestFullscreen();
+            }
+        }
     </script>
 </body>
 
