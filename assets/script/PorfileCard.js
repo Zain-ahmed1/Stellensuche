@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (screenWidth <= 640 && screenWidth > 500) {
                 skillsToHide = 2;
             } else if (screenWidth <= 500) {
-                skillsToHide = 0;
+                skillsToHide = 1;
             }
 
             for (let i = skillsToHide; i < skills.length; i++) {

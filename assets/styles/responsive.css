@@ -75,9 +75,31 @@
     .profile-sidebar .sidebar-detail-list iconify-icon {
         width: 12%;
     }
+
+    .payment-container {
+        flex-direction: column;
+        width: fit-content !important;
+        padding: 0 !important;
+    }
+
+    .payment-card:nth-child(2),
+    .payment-card:nth-child(3) {
+        border-top: 1px solid #BBBBBB;
+        border-left: none;
+    }
+
+    .price-hero h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    .gap-btw {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
     .hero-section {
         padding: 50px 0;
     }
@@ -197,9 +219,14 @@
         margin-top: -20px !important;
         width: 100%;
     }
+
+    .payment-card {
+        padding: 30px 20px;
+    }
 }
 
 @media only screen and (max-width: 640px) {
+
 
     .row>* {
         padding: 0 !important;
@@ -214,12 +241,11 @@
     }
 
     .btn-flex .custom-btn-style {
-        width: 100% !important;
         padding: 12px 0 !important;
     }
 
     .hero-txt h1 {
-        font-size: 42px;
+        font-size: 36px;
     }
 
     .hero-txt p {
@@ -273,6 +299,15 @@
         padding: 0 30px !important;
     }
 
+    .controls .center-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .controls .center-btn iconify-icon {
+        font-size: 24px;
+    }
+
     .sidebar-detail-list span {
         width: 100%;
     }
@@ -307,6 +342,7 @@
 
     .profile-card .position {
         font-size: 20px;
+        padding-top: 8px;
     }
 
     .profile-pic {
@@ -341,6 +377,44 @@
 
     .tab-content ul li {
         font-size: 16px;
+    }
+
+    .sub-details {
+        padding-top: 16px;
+    }
+
+    .link-head h1 {
+        padding-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .link-head h1~ul li a,
+    .info a span {
+        font-size: 16px !important;
+    }
+
+    .social .link-head h1 {
+        font-size: 22px;
+        padding-top: 46px;
+    }
+
+    .fs-3.wir {
+        font-size: 12px !important;
+        padding-right: 4px;
+    }
+
+    .payment-card h1 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .price-hero h1 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .price-hero p {
+        padding-top: 18px;
     }
 
 }

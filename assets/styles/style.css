@@ -534,6 +534,10 @@ a {
     text-align: center;
 }
 
+.sidebar .sidebar-detail-list {
+    cursor: pointer;
+}
+
 .sidebar .sidebar-detail h1 {
     font-size: 20px;
     font-weight: 600;
@@ -888,12 +892,13 @@ a {
 }
 
 .video-head .c-video .controls .center-btn {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
 }
 
 .video-head .c-video .controls .center-btn iconify-icon {
-    font-size: 20px;
+    font-size: 28px;
+    color: var(--white-color);
 }
 
 .profile-sidebar .sidebar-detail-list {
@@ -1010,6 +1015,159 @@ a {
     color: #fff;
     border: 1px solid var(--main-color) !important;
 }
+
+/* Payment Section Styling */
+.price-hero {
+    width: 100%;
+    text-align: center;
+}
+
+.price-hero h1 {
+    font-size: 54px;
+    font-weight: 700;
+    color: #0C6069;
+}
+
+.price-hero p {
+    font-size: 20px;
+    padding-top: 24px;
+}
+
+
+.tabs {
+    width: 100%;
+    max-width: 400px;
+    margin: auto !important;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1000px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tabs .tab {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 14px 0;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    background-color: transparent;
+    color: #747474;
+    z-index: 1;
+    transition: all 150ms ease-in-out;
+}
+
+.tab.active {
+    color: #fff;
+    font-weight: 500;
+}
+
+.tabs .tab-active {
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 1000px 0 0 1000px;
+    background-color: var(--secondary-color);
+    transition: all 150ms ease-in-out;
+}
+
+.tab-active.right-tab {
+    border-radius: 0 1000px 1000px 0;
+}
+
+.payment-container {
+    border: 1px solid #BBBBBB;
+    border-radius: 14px;
+}
+
+.payment-card {
+    padding: 30px 30px;
+}
+
+.payment-card h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.pricing.yearly-price {
+    display: none;
+}
+
+.price {
+    color: #39ABB8;
+    font-weight: 700;
+    padding: 4px 0 20px 0;
+}
+
+.pricing {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.price .dollar {
+    font-size: 26px;
+    padding-top: 6px;
+}
+
+.price span {
+    font-size: 42px;
+}
+
+.price .month {
+    font-size: 22px;
+    margin-top: 24px !important;
+}
+
+.pay-detail h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pay-detail ul {
+    list-style-type: none;
+    padding-top: 14px;
+    margin-left: 8px !important;
+}
+
+.pay-detail ul li {
+    padding: 12px 0;
+}
+
+.pay-detail ul li::marker {
+    content: url("../images/tick.svg") "    ";
+    align-self: center;
+}
+
+.pay-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 16px 0;
+    margin-top: 20px !important;
+    transition: all 129ms ease-in-out;
+}
+
+.pay-btn:hover {
+    background-color: #2c507d;
+}
+
+.payment-card:nth-child(2),
+.payment-card:nth-child(3) {
+    border-left: 1px solid #BBBBBB;
+}
+
 
 .footer {
     background-color: #1B203E !important;
