@@ -5,9 +5,13 @@
 
 }
 
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:991px) {
     .navBar-width {
         width: 100%;
+    }
+
+    #navbarSupportedContent {
+        display: none !important;
     }
 }
 
@@ -101,7 +105,7 @@
     }
 
     .hero-section {
-        padding: 50px 0;
+        padding: 30px 0 50px 0;
     }
 
     .hero-section .img {
@@ -227,6 +231,9 @@
 
 @media only screen and (max-width: 640px) {
 
+    .nav-logo {
+        height: 50px;
+    }
 
     .row>* {
         padding: 0 !important;
@@ -241,7 +248,8 @@
     }
 
     .btn-flex .custom-btn-style {
-        padding: 12px 0 !important;
+        padding: 10px 0 !important;
+        width: 100% !important;
     }
 
     .hero-txt h1 {
@@ -398,7 +406,7 @@
         padding-top: 46px;
     }
 
-    .fs-3.wir {
+    .wir {
         font-size: 12px !important;
         padding-right: 4px;
     }
@@ -408,9 +416,13 @@
         font-weight: 700;
     }
 
+    .price-hero p {
+        font-size: 18px;
+    }
+
     .price-hero h1 {
-        font-size: 42px;
-        line-height: 52px;
+        font-size: 38px;
+        line-height: 44px;
     }
 
     .price-hero p {

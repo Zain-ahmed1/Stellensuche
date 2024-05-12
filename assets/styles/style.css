@@ -72,10 +72,14 @@ a {
     background: var(--secondary-color) !important;
 }
 
+.nav-logo {
+    height: 55px;
+}
+
 .btn-flex .custom-btn-style {
     font-weight: 400;
     font-size: 18px;
-    border: none !important;
+    border: 1px solid transparent !important;
     outline: none;
 }
 
@@ -103,6 +107,25 @@ a {
 
 .btn-flex .custom-btn-style:nth-child(2):hover {
     background-color: #49c6d3;
+}
+
+.opacity {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 50ms ease-in-out;
+    backdrop-filter: blur(2px);
+}
+
+.opacity.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* ******************** HOME PAGE STYLING START *********************** */
@@ -534,10 +557,6 @@ a {
     text-align: center;
 }
 
-.sidebar .sidebar-detail-list {
-    cursor: pointer;
-}
-
 .sidebar .sidebar-detail h1 {
     font-size: 20px;
     font-weight: 600;
@@ -901,10 +920,6 @@ a {
     color: var(--white-color);
 }
 
-.profile-sidebar .sidebar-detail-list {
-    cursor: pointer;
-}
-
 .profile-sidebar .sidebar-detail-list span {
     color: var(--black-color);
     font-weight: 400;
@@ -1023,7 +1038,7 @@ a {
 }
 
 .price-hero h1 {
-    font-size: 54px;
+    font-size: 48px;
     font-weight: 700;
     color: #0C6069;
 }
@@ -1033,10 +1048,17 @@ a {
     padding-top: 24px;
 }
 
+.tab-content {
+    padding-top: 44px;
+}
+
+.profile-main-content .tab-content {
+    padding-top: 0;
+}
 
 .tabs {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     margin: auto !important;
     height: auto;
     display: flex;
@@ -1049,10 +1071,10 @@ a {
 }
 
 .tabs .tab {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    padding: 14px 0;
-    width: 200px;
+    padding: 12px 0;
+    width: 100%;
     display: inline-block;
     text-align: center;
     background-color: transparent;
@@ -1085,6 +1107,9 @@ a {
 .payment-container {
     border: 1px solid #BBBBBB;
     border-radius: 14px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .payment-card {
@@ -1092,7 +1117,7 @@ a {
 }
 
 .payment-card h1 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 700;
 }
 
@@ -1103,7 +1128,7 @@ a {
 .price {
     color: #39ABB8;
     font-weight: 700;
-    padding: 4px 0 20px 0;
+    padding-bottom: 14px;
 }
 
 .pricing {
@@ -1118,16 +1143,16 @@ a {
 }
 
 .price span {
-    font-size: 42px;
+    font-size: 38px;
 }
 
 .price .month {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 24px !important;
 }
 
 .pay-detail h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -1138,7 +1163,8 @@ a {
 }
 
 .pay-detail ul li {
-    padding: 12px 0;
+    padding: 8px 0;
+    font-size: 16px;
 }
 
 .pay-detail ul li::marker {
@@ -1154,8 +1180,8 @@ a {
     color: var(--white-color);
     font-size: 18px;
     font-weight: 500;
-    padding: 16px 0;
-    margin-top: 20px !important;
+    padding: 12px 0;
+    margin-top: 8px !important;
     transition: all 129ms ease-in-out;
 }
 
@@ -1192,8 +1218,10 @@ footer .info iconify-icon {
 }
 
 .link-head h1 {
-    font-size: 28px;
+    font-size: 20px;
     color: #4AB7C3;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .link-head h1~ul li a {
@@ -1213,7 +1241,6 @@ footer .info iconify-icon {
 }
 
 .social .link-head h1 {
-    font-size: 26px;
     padding-top: 50px;
 }
 
@@ -1235,4 +1262,10 @@ footer .info iconify-icon {
 
 .social .social-icons iconify-icon:last-child {
     font-size: 20px;
+}
+
+.wir {
+    font-size: 14px;
+    font-weight: 600;
+    color: #110B09;
 }
