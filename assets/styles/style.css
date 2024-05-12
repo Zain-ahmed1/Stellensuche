@@ -689,7 +689,8 @@ a {
     transition: height 100ms ease-in-out;
 }
 
-.controls .progress:hover {
+.controls .progress:hover,
+.bottom-controls:hover .progress {
     height: 8px;
 }
 
@@ -711,6 +712,46 @@ a {
     color: #fff;
     font-size: 24px;
     cursor: pointer;
+}
+
+#settingsModal {
+    display: none;
+    animation: Opacity 120ms ease-in-out both;
+}
+
+.subtitle {
+    position: absolute;
+    background-color: #051327e2;
+    backdrop-filter: blur(12px);
+    border: 1px solid #1B203E;
+    bottom: 46px;
+    left: -30px;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.subtitle h2 {
+    font-size: 16px;
+}
+
+.subtitle label {
+    font-size: 14px;
+}
+
+.subtitle input {
+    cursor: pointer;
+}
+
+#speedOptions {
+    background-color: transparent;
+    border: none !important;
+    color: #fff;
+    cursor: pointer;
+}
+
+#speedOptions option {
+    color: #000;
 }
 
 /* Customize the appearance of the sound bar container */
@@ -925,6 +966,9 @@ a {
     font-weight: 400;
 }
 
+.video-head .c-video .subtitle {
+    left: -50px;
+}
 
 /* PROFILE MAIN CONTENT */
 .profile-main-content {
