@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellensuche</title>
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+    <!-- TABLER Styling CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-payments.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-vendors.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-payments.min.css">
+
+</head>
+
+<body>
+
+
+    <header class="header" id="mainHeader">
+        <!-- Populated by Load JQuery -->
+    </header>
+
+    <main>
+        <section class="pb-4">
+            <div style="background-color: #E6F0F2;" class="py-4">
+                <div
+                    class="container-xl pf-container mx-auto d-flex justify-content-between align-content-center column-gap-4">
+
+                    <div id="profile-detail-section"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pt-5 footer">
+        <!-- Populated By Jquery Load Method -->
+    </footer>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- TABLER Scripting CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+    <!-- Iconify CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="./assets/script/profileDetail.js"></script>
+    <script src="./assets/script/PorfileCard.js"></script>
+    <script src="./assets/script/app.js" type="module"></script>
+    <script>
+        $(function () {
+            $(".header").load("/layout/header.html");
+            $(".footer").load("/layout/footer.html");
+        });
+    </script>
+</body>
+
+</html>

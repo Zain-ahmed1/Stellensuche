@@ -33,9 +33,9 @@
             <div
                 class="container mx-auto d-flex flex-md-row flex-column justify-content-between align-items-center w-100 mx-auto px-xl-0 px-sm-3 px-3 py-5">
                 <div class="d-flex w-100 flex-column row-gap-sm-3 align-items-start justify-content-start hero-txt">
-                    <h1 class="lh-base ">Suche nach Stelle</h1>
+                    <h1 class="lh-base ">Suchen Sie nach unseren Top-Mitarbeitern</h1>
                     <p class="fs-1 pt-sm-0 pt-3 pb-sm-2 pb-4">
-                        Durchsuchen Sie unsere Tausenden von Jobs
+                        Durchsuchen Sie hier Tausende von Profilen
                     </p>
 
                     <div class="w-100">
@@ -48,10 +48,10 @@
                                                 icon="basil:search-outline"></iconify-icon>
                                         </div>
                                     </span>
-                                    <input class="form-control me-sm-2" type="search" placeholder="Stelle suchen"
-                                        aria-label="Search" required>
+                                    <input class="form-control me-sm-2" type="search"
+                                        placeholder="Beruf, Firma oder Stichwort" aria-label="Search" required>
                                 </div>
-                                <div class="filter" onclick="toggleSelectBoxes()">
+                                <div class="filter">
                                     <iconify-icon icon="cil:filter"></iconify-icon>
                                 </div>
                                 <div
@@ -64,21 +64,18 @@
                                                     <iconify-icon icon="mingcute:down-line"></iconify-icon>
                                                 </div>
                                                 <div class="select-options">
-                                                    <div class="select-option" data-value="Content Writing">Content
-                                                        Writing
+                                                    <div class="select-option" data-value="Content Writing">Munich
                                                     </div>
-                                                    <div class="select-option" data-value="Development">Development
+                                                    <div class="select-option" data-value="Development">Berlin
                                                     </div>
-                                                    <div class="select-option" data-value="Full Stack Development">Full
-                                                        Stack Development</div>
-                                                    <div class="select-option" data-value="SEO Expert">SEO
-                                                        Expert</div>
+                                                    <div class="select-option" data-value="Full Stack Development">
+                                                        Hamburg</div>
+                                                    <div class="select-option" data-value="SEO Expert">Dortmund</div>
                                                     <div class="select-option" data-value="Marketing Related Jobs">
-                                                        Marketing
-                                                        Related Jobs</div>
-                                                    <div class="select-option" data-value="Graphic Designing">Graphic
-                                                        Designing</div>
-                                                    <div class="select-option" data-value="Video Editor">Video Editor
+                                                        Cologne</div>
+                                                    <div class="select-option" data-value="Graphic Designing">Pforzheim
+                                                    </div>
+                                                    <div class="select-option" data-value="Video Editor">Saarbrücken
                                                     </div>
                                                 </div>
                                             </div>
@@ -145,7 +142,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn btn-pill btn-primary fs-3 btn-submit py-3" type="submit">Job
+                            <button class="btn btn-pill btn-primary fs-3 btn-submit py-3" type="submit">Freiberufler
                                 suchen</button>
                         </form>
                     </div>
@@ -155,8 +152,8 @@
 
         <section class="py-5">
             <div class="job-card-container stelle-cards container mx-auto px-xl-0 px-3">
-                <h1>203 Ergebnisse gefunden</h1>
-                <div class="job-card-flex d-flex flex-column row-gap-3 pt-3">
+                <h1>120 Profile gefunden</h1>
+                <div class="profile-card-flex d-flex flex-column row-gap-3 pt-3">
                     <!-- Populated By JS -->
                 </div>
             </div>
@@ -175,13 +172,15 @@
     <!-- Iconify CDN -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
     <!-- Custom JavaScript -->
-    <script src="./assets/script/JobCard.js"></script>
+    <script src="./assets/script/PorfileCard.js"></script>
     <script src="./assets/script/app.js" type="module"></script>
+
     <script>
         $(function () {
             $(".header").load("/layout/header.html");
             $(".footer").load("/layout/footer.html");
         });
+
     </script>
 </body>
 
